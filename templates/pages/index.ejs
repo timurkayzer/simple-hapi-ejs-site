@@ -1,0 +1,9 @@
+<%- include('../partials/header'); %>
+<div class="main-block">
+    <% pages.forEach((page)=>{
+        %>
+    <a href="/<%= page.slug %>"><%= page.title %></a>
+    <%
+    }) %>
+</div>
+<% include ../partials/footer %>

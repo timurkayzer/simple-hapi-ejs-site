@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>
+        <% if(typeof page !== "undefined"){ %>
+        <%= page.title %>
+        <% } else { %>
+        <%= 'All pages'  %>
+        <% } %>
+    </title>
+    <style>
+        .main-block {
+            padding: 10vh 10vw;
+        }
+
+        a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
