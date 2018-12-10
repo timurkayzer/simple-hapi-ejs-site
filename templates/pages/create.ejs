@@ -1,0 +1,28 @@
+<%- include('../partials/header', {page:{title:"Create new blog"}}); %>
+<div class="main-block">
+    <form class="create-form" name="create-form" action="/create-blog" method="post">
+        <div class="form-group">
+            <label for="title">Blog title</label>
+            <div class="text">
+                <input name="title" id="title" type="text" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="slug">Blog slug</label>
+            <div class="text">
+                <input name="slug" id="slug" type="text" required>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="full_text">Text</label>
+            <div class="textarea">
+                <textarea rows="10" name="full_text" id="full_text" required></textarea>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<% include ../partials/footer %>
